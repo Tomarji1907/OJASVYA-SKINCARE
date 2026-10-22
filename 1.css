@@ -1177,3 +1177,8 @@ h1 i, h2 i { color: var(--green); }
     transition-duration: .01ms !important;
   }
 }
+.footer-bottom .developer-credit {
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
