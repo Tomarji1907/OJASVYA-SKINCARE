@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="OJASVYA — skincare rituals inspired by nature.">
+  <title>OJASVYA — Skincare Rituals</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="1.css">
+  <script src="1.js" defer></script>
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <div class="announcement">
+    ✳ &nbsp; A LITTLE LOVE FOR YOUR SKIN — FREE SHIPPING OVER ₹999 &nbsp; ✳
+  </div>
+
+  <header class="header" id="header">
+    <button class="icon-btn menu-toggle" id="menuToggle"
+      aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <a class="logo" href="#home">ojasvya<span>skincare rituals</span></a>
+
+    <nav class="nav" id="nav">
+      <a href="#shop">Shop all</a>
+      <a href="#ritual">Our philosophy</a>
+      <a href="#bestsellers">Bestsellers</a>
+      <a href="#journal">The journal</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Open search">⌕</button>
+      <button class="cart-button" id="openCart">
+        Bag <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="search-bar" id="searchBar">
+    <span>⌕</span>
+    <input id="searchInput" type="search"
+      placeholder="Find your new favourite..."
+      aria-label="Search products">
+    <button id="clearSearch" aria-label="Clear search">✕</button>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">✳ &nbsp; LESS, BUT BETTER.</span>
+
+        <h1>Your skin.<br><i>Your kind of glow.</i></h1>
+
+        <p>
+          Thoughtful skincare inspired by simple rituals.
+          Everyday essentials, considered details, and a softer
+          moment just for you.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#shop">Discover your ritual <span>↗</span></a>
+          <a class="subtle-link" href="#ritual">Get to know us ↓</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-icon">✳</span>
+          <span><b>Skin first. Always.</b><br>Gentle routines. Thoughtful choices.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1200&q=85"
+          alt="Skincare products arranged in a natural setting">
+
+        <div class="hero-caption">
+          <span>01 / YOUR DAILY RITUAL</span>
+          <b>Meet your new essentials.</b>
+        </div>
+
+        <div class="hero-stamp">NATURE<br>MEETS<br>SCIENCE ✳</div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <span>✳ Thoughtful essentials</span>
+      <span>✳ Everyday rituals</span>
+      <span>✳ Considered details</span>
+      <span>✳ Made for your shelf</span>
+    </div>
+
+    <section class="section" id="bestsellers">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE ONES YOU'LL REACH FOR</span>
+          <h2>A few good <i>favourites.</i></h2>
+          <p class="intro">Everyday essentials to make your routine feel special.</p>
+        </div>
+        <a class="text-link" href="#shop">Explore the collection ↗</a>
+      </div>
+
+      <div class="product-grid featured-grid" id="featuredProducts"></div>
+    </section>
+
+    <section class="ritual" id="ritual">
+      <div class="ritual-image">
+        <img
+          src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1100&q=85"
+          alt="Skincare products in a calming setting"
+          loading="lazy">
+
+        <div class="image-caption">
+          <span>THE OJASVYA WAY</span>
+          <b>Care, without the noise.</b>
+        </div>
+      </div>
+
+      <div class="ritual-copy">
+        <span class="eyebrow">A GENTLER KIND OF BEAUTY</span>
+        <h2>Good skin days<br>start with <i>good rituals.</i></h2>
+
+        <p>
+          Skincare should feel like a deep breath, not another item
+          on your to-do list. Keep it simple, read your labels,
+          and make space for a little care.
+        </p>
+
+        <div class="ritual-steps">
+          <div>
+            <span>01</span>
+            <p><b>Cleanse gently</b><small>A fresh start, every day.</small></p>
+          </div>
+          <div>
+            <span>02</span>
+            <p><b>Nourish thoughtfully</b><small>Give your routine a little care.</small></p>
+          </div>
+          <div>
+            <span>03</span>
+            <p><b>Protect your ritual</b><small>Make everyday care a habit.</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE FULL COLLECTION</span>
+          <h2>Find your <i>favourite.</i></h2>
+          <p class="intro">19 distinct names and a different photo for every item.</p>
+        </div>
+        <span class="result-count" id="resultCount">18 products</span>
+      </div>
+
+      <div class="shop-controls">
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="All">All products</button>
+          <button class="filter" data-category="Cleanse">Cleanse</button>
+          <button class="filter" data-category="Hydrate">Hydrate</button>
+          <button class="filter" data-category="Treat">Treat</button>
+          <button class="filter" data-category="Protect">Protect</button>
+        </div>
+
+        <select id="sort" aria-label="Sort products">
+          <option value="featured">Sort: Featured</option>
+          <option value="low">Price: Low to high</option>
+          <option value="high">Price: High to low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+
+      <div class="product-grid" id="allProducts" aria-live="polite"></div>
+
+      <div class="no-results" id="noResults" hidden>
+        <span>✳</span>
+        <h3>Nothing found just yet.</h3>
+        <p>Try another search or explore the full collection.</p>
+        <button class="btn" id="resetFilters">View all products ↗</button>
+      </div>
+
+      <p class="demo-note">
+        Concept storefront: names and prices are demo content;
+        product photography is illustrative reference imagery.
+      </p>
+    </section>
+
+    <section class="banner">
+      <div>
+        <span class="eyebrow">A LITTLE ROUTINE GOES A LONG WAY</span>
+        <h2>Make room for<br><i>yourself.</i></h2>
+        <p>
+          Less pressure. More thoughtful moments.
+          A skincare routine that feels like yours.
+        </p>
+        <a href="#shop" class="btn btn-light">Build your ritual ↗</a>
+      </div>
+      <span class="banner-flower">✳</span>
+    </section>
+
+    <section class="section journal" id="journal">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">NOTES FOR SLOWER MOMENTS</span>
+          <h2>The little <i>glow journal.</i></h2>
+          <p class="intro">Thoughtful reminders for your everyday rituals.</p>
+        </div>
+      </div>
+
+      <div class="journal-grid">
+        <article>
+          <div class="journal-image journal-one">☼</div>
+          <small>EVERYDAY RITUALS · 3 MIN READ</small>
+          <h3>Making a little room for your morning.</h3>
+          <p>Small, simple ways to begin your day with intention.</p>
+        </article>
+
+        <article>
+          <div class="journal-image journal-two">✳</div>
+          <small>SLOW LIVING · 4 MIN READ</small>
+          <h3>Your skincare routine doesn't need ten steps.</h3>
+          <p>Keep your everyday routine considered and personal.</p>
+        </article>
+
+        <article>
+          <div class="journal-image journal-three">〰</div>
+          <small>SELF-CARE · 2 MIN READ</small>
+          <h3>A little pause is part of the plan.</h3>
+          <p>Make space for small moments that help you slow down.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter-flower">✳</div>
+      <span class="eyebrow">A NOTE FROM US</span>
+      <h2>Good things, delivered <i>gently.</i></h2>
+      <p>Skincare notes, little rituals and first dibs on new arrivals.</p>
+
+      <form id="newsletterForm">
+        <label class="visually-hidden" for="newsletterEmail">Your email address</label>
+        <input id="newsletterEmail" type="email" placeholder="Your email address" required>
+        <button class="btn">Count me in ↗</button>
+      </form>
+
+      <small id="newsletterMessage" role="status"></small>
+      <span class="newsletter-note">Demo form — no email is stored.</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="#home">ojasvya<span>skincare rituals</span></a>
+        <p>Care that feels like you.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#shop">Shop</a>
+        <a href="#ritual">Our philosophy</a>
+        <a href="#journal">Journal</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+
+      <a href="#home" class="back-top">BACK TO THE TOP ↑</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 OJASVYA · CONCEPT STOREFRONT</span>
+      <span>MADE WITH A LITTLE CARE ✳</span>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-modal="true">
+    <div class="drawer-head">
+      <div>
+        <span class="eyebrow">YOUR EVERYDAY ESSENTIALS</span>
+        <h2>Your bag <span id="drawerCount">(0)</span></h2>
+      </div>
+      <button class="icon-btn" id="closeCart" aria-label="Close bag">✕</button>
+    </div>
+
+    <div class="shipping-progress">
+      <span id="shippingMessage">You're just getting started.</span>
+      <div class="shipping-track"><span id="shippingFill"></span></div>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-bottom">
+      <div class="subtotal"><span>Subtotal</span><b id="subtotal">₹0</b></div>
+      <p>Shipping and discounts calculated at checkout.</p>
+      <button class="btn checkout" id="checkout">Continue to checkout ↗</button>
+      <small>Demo checkout · No payment will be taken.</small>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-label="Product details">
+    <button class="modal-close icon-btn" id="closeModal" aria-label="Close product details">✕</button>
+    <div id="productDetails"></div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
